@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: snow;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carteRotation {
+    width: 280px;
+    height: 450px;
+    background: black;
+    cursor: pointer;
+    transition: background 0.4s linear;
+    border: 2px solid #f5cb22;
+}
+.headPhoto {
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid gold;
+}
+.cercle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s background linear;
+}
+.headPhoto .cercle svg {
+    width: 80px;
+    fill: black;
+}
+h2 {
+    text-align: center;
+    color: gold;
+    transition: 0.4s linear color;
+    font-size: 23px;
+}
+.txt {
+    color: gold;
+    font-size: 15px;
+    padding: 20px;
+    text-align: justify;
+    transition: 0.4s color linear;
+}
+.carteRotation:hover {
+    background: #f5cb22;
+    border: 2px solid black;
+}
+.carteRotation:hover .headPhoto {
+    border-bottom: 2px solid black;
+}
+.carteRotation:hover .cercle {
+    background: black;
+}
+.carteRotation:hover .cercle svg {
+    transition: 0.4s all linear;
+    fill: gold;
+    transform: rotateY(360deg);
+}
+.carteRotation:hover .txt {
+    color: black;
+}
+.carteRotation:hover h2 {
+    color: black;
+}
