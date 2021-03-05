@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: snow;
+    background: grey;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -15,20 +15,20 @@ body {
     background: black;
     cursor: pointer;
     transition: background 0.4s linear;
-    border: 2px solid #f5cb22;
+    border: 3px solid rgb(119, 2, 41);
 }
 .headPhoto {
     height: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid gold;
+    border-bottom: 3px solid rgb(119, 2, 41);
 }
 .cercle {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: gold;
+    background: rgb(119, 2, 41);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,30 +40,30 @@ body {
 }
 h2 {
     text-align: center;
-    color: gold;
+    color: lawngreen;
     transition: 0.4s linear color;
     font-size: 23px;
 }
 .txt {
-    color: gold;
+    color: lawngreen;
     font-size: 15px;
     padding: 20px;
     text-align: justify;
     transition: 0.4s color linear;
 }
 .carteRotation:hover {
-    background: #f5cb22;
-    border: 2px solid black;
+    background: rgb(119, 2, 41);
+    border: 3px solid black;
 }
 .carteRotation:hover .headPhoto {
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 .carteRotation:hover .cercle {
     background: black;
 }
 .carteRotation:hover .cercle svg {
     transition: 0.4s all linear;
-    fill: gold;
+    fill: lawngreen;
     transform: rotateY(360deg);
 }
 .carteRotation:hover .txt {
